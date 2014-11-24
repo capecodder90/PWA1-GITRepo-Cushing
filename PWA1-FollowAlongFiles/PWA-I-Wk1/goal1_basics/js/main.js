@@ -408,7 +408,17 @@ if(5 < 2 || (1 === 1 && ! (2 == "2" || 5 < 2))){
     1. learn if - else
  ********************************************/
 
+/*var weather = "Cloudy";
+var bobsMood;
 
+if(weather === "sunny"){
+    bobsMood = "happy";
+    //console.log("Bob is", bobsMood);
+}else{
+    bobsMood = "sad";
+    //console.log("Bob is", bobsMood);
+};
+console.log("If-Else weather: ", bobsMood);*/
 
 
 /*******************************************
@@ -427,6 +437,28 @@ if(5 < 2 || (1 === 1 && ! (2 == "2" || 5 < 2))){
     3.  console.log the results after each conditional
  ********************************************/
 
+var weather = "sunny";
+var bobsMood;
+var waves = 10;
+
+if(weather === "sunny"){
+    if(waves === 10){
+        bobsMood = "pumped";
+    }else if((waves >= 5) && (waves <= 9)){
+        bobsMood = "mellow";
+    }else{
+        bobsMood = "bummed";
+    }
+}else if(weather === "overcast"){
+    if((waves <= 10) || (waves >= 7)){
+        bobsMood = "jackedUp";
+    }else if((waves <= 6) || (waves >= 3)){
+        bobsMood = "totally bummed";
+    }
+}else{
+    bobsMood = "not happy";
+};
+console.log("Bob's Mood: ", bobsMood);
 
 
 
