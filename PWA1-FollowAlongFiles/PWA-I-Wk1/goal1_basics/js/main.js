@@ -291,17 +291,17 @@ if(5 > 3){
     // == performs a loose check of two values
 if("1" == 1){
     console.log("'1' == 1, True");
-}
+};
 
 if(1 == 1){
     console.log("1 == 1, True");
-}
+};
 if("1" === 1){
     console.log("'1' === 1, False");
-}
+};
 if("1" !== 1){
     console.log("'1' !== 1, True");
-}
+};
 
 
 /* ==============================================================
@@ -322,7 +322,7 @@ if ("a" == "b"){
 }else{
     //False: run code
     console.log("if-else: the 'IF' state is false");
-}
+};
 
 
 
@@ -336,11 +336,19 @@ if("a" === "b"){
     console.log("a is less than d");
 }else{
     console.log("if - else if: all others returned false");
-}
+};
 
     //nested conditional statement
 
-
+if("a" !== "a"){
+    if("b" === "b"){
+        console.log("In Nest if-else / b === b: True");
+    }else{
+        //execute block of code if matching "IF" statement false
+    }
+}else{
+    console.log("Nested conditional: 1st IF returned false");
+};
 
 /* ==============================================================
  LOGICAL operators
@@ -360,15 +368,32 @@ if("a" === "b"){
 
     //AND logical operator
 
+if( (1 === 1) && ("hi" === "hi") ){
+    console.log('&& logical operator: both sides = true');
+};
 
     //OR logical operator
+
+if( (1 === 1) || ("hi" === "no") ){
+    console.log('|| logical operator: one side = true');
+};
 
 
     // ! NOT logical operator
 
+if( !(1 === 1) || ("hi" === "no") ){
+    console.log('! NOT logical operator: left is true converted to NOT');
+}else{
+    console.log('! NOT logical operator: both sides = false');
+};
 
     // all logical operators with order of operations
 
+if(5 < 2 || (1 === 1 && ! (2 == "2" || 5 < 2))){
+    console.log('logical operator: true');
+}else{
+    console.log('logical operator: false');
+};
 
 
 /*******************************************
