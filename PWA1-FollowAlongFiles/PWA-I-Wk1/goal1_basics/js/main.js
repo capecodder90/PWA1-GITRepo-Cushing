@@ -481,8 +481,12 @@ console.log("Bob's Mood: ", bobsMood);
     - ? = perform the next statement if true
     - : = false (perform the new statement after the :)
  */
+var weather = "Sunny";
+var mood = (weather === "Sunny" ? "happy" : "sad");
+console.log("Mood:", mood);
 
-
+var smile = false;
+console.log("I am " + ( smile === true ? "happy" : "sad" ) + "!!");
 
 /*******************************************
  STUDENT ACTIVITY 5:
@@ -496,6 +500,10 @@ console.log("Bob's Mood: ", bobsMood);
     4.  console.log the results
  ********************************************/
 
+var temp = 90;
+var weather = "lol";
+var student1 = (weather === "Sunny" ? "happy" : ((temp >= 80) ? "content" : "sad"));
+console.log("The student is " + student1);
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
