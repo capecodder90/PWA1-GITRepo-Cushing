@@ -667,8 +667,19 @@ console.log("name: " + name);
     4.  console.log the results
  ********************************************/
 
+//var myctr = 1;
 
+var myCounter = function(newct){
+    //var myctr = 50;
+    myctr += newct;
+    return myctr;
+};
 
+var cnt = myCounter(5);
+console.log("counter = " + cnt);
+
+var cnt = myCounter(2);
+console.log("counter = " + cnt);
 
 /*******************************************
  STUDENT ACTIVITY 8:
@@ -680,3 +691,28 @@ console.log("name: " + name);
  5. console.log the Results
  ********************************************/
 
+var value1 = "Overcast";
+var value2 = 5;
+var moodFn = function(weather, waves){
+    if(weather === "Sunny"){
+        if(waves === 10){
+            bobsMood = "pumped";
+        }else if((waves >= 5) && (waves <= 9)){
+            bobsMood = "mellow";
+        }else{
+            bobsMood = "bummed";
+        }
+    }else if(weather === "Overcast"){
+        if((waves <= 10) && (waves >= 7)){
+            bobsMood = "jackedUp";
+        }else if((waves <= 6) || (waves >= 3)){
+            bobsMood = "totally bummed";
+        }
+    }else{
+        bobsMood = "not happy";
+    };
+    return bobsMood;
+};
+
+var moodType = moodFn(value1,value2);
+console.log("Bob's Mood: ", moodType);
