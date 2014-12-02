@@ -437,6 +437,12 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 console.log('------ MORE Functions ----------');
 
+    var bondsCars = function(){
+        return ['ferrari','lambo','vwBug'];
+    };
+
+    var cars = bondsCars(); // will return the array of values
+    console.log('James Bond cars,', cars);
 
 	/* 
 		Self Executing Functions
@@ -453,6 +459,10 @@ console.log('------ MORE Functions ----------');
 			self function - combining the 2 statement above
 				var fn = (function(){})();	
 	*/	
+
+    (function(){
+        
+    })();
 
 
 /*
