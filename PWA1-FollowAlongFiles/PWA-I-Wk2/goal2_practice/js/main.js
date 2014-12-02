@@ -524,6 +524,13 @@ console.log('------ MORE Functions ----------');
 */
 console.log('------ While / Loop ----------');
 
+    var numOfBeers = 10;
+
+    while(numOfBeers > 0){
+        console.log(numOfBeers + ' kegs on the wall.');
+        numOfBeers--;
+    }
+
 	
 /*
 	===============================================
@@ -549,6 +556,10 @@ console.log('------ While / Loop ----------');
 
 console.log('------For Loop ----------');
 
+    for(var beers = 10; beers > 0; beers--){
+        console.log(beers + ' bottles of beers on the wall');
+    }
+
 
 	/* 
 		array.Length
@@ -560,7 +571,10 @@ console.log('------For Loop ----------');
 		- an array’s numeric index begins at 0  
 		- in the example below, the last index of the array would be 4 
 			- the  .length property returns the count, which would be 5	
-	*/	
+	*/
+
+    var myNums = [1,2,3,4,5];
+    console.log('length: ', myNums.length);
 
 
 	/* 
@@ -582,6 +596,10 @@ console.log('------For Loop ----------');
 			save the array length in a variable, inside the first statement
 	*/
 
+    for(var i = 0, j = myNums.length; i < j; i++){
+        console.log(myNums[i]);
+    };
+
 
 	/*
 		BREAK...
@@ -591,6 +609,13 @@ console.log('------For Loop ----------');
 			break point, and perform no more iterations
 	*/
 
+    for(var i = 0, j = myNums.length; i < j; i++){
+        if(i === 3){
+            console.log("testing out the break and it broke");
+            continue;
+        };
+        console.log('length in for loop:',myNums[i]);
+    };
 
 
 	/*
@@ -600,6 +625,8 @@ console.log('------For Loop ----------');
 			statement will stop a loop’s current iteration, and continue 
 			on to the next iteration
 	*/
+
+
 
 
 /*******************************************
@@ -613,7 +640,20 @@ console.log('------For Loop ----------');
 		b.  create a for loop using the faster method (4 parameters)
 			- in the loop just console.log the values
 ********************************************/
+    var cartoonDudes = [
+    'Superman',
+    'Batman',
+    'Wolverine',
+    'Iceman'
+    ];
 
+    for(var i = 0; i < cartoonDudes.length; i++){
+        console.log(cartoonDudes[i]);
+    };
+
+    for(var i = 0, j = cartoonDudes.length; i < j; i++){
+        console.log(cartoonDudes[i]);
+    };
 
 
 /*******************************************
