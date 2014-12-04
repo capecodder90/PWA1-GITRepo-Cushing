@@ -15,16 +15,6 @@
     //player name
     var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
     var playerTwo = ["Yoshi", 20, 100];// create variable playerTwo, define it as an array with the player name, damage and health
-    /*var playerOneName = "Mario"; // declare variable for player 1 name and define it as Mario
-    var playerTwoName = "Yoshi"; // declare variable for player 2 name and define it as Yoshi
-
-    //player damage
-    var player1Damage = 20; // declare variable for player 1 damage and define it as 20
-    var player2Damage = 20; // declare variable for player 2 damage and define it as 20
-
-    //player health
-    var playerOneHealth = 100; // declare variable for player 1 health and define it as 100
-    var playerTwoHealth = 100; // declare variable for player 2 health and define it as 100*/
 
     //initiate round
     var round=0; // declare variable for round number and define it as 0
