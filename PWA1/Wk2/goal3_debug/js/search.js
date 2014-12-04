@@ -27,7 +27,7 @@
 			alert("Your search query is too small, try again."); // tell the user the query is too small
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
-			searchInput.focus(); // put the cursor in the search box
+			searchInput.focus(); // focuses on the search box
 			return;
 		};
 		
