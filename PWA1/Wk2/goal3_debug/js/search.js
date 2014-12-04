@@ -8,7 +8,7 @@
 	;
 	
 	// Validates search query
-    // fixed spelling of validate
+    // fixed spelling of validate, changed comparison operator to assignment operator
 	var validate = function(query){ // creates the validate variable, and stores the value of the function in it
 		
 		// Trim whitespace from start and end of search query
