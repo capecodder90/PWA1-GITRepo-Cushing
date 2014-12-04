@@ -18,6 +18,7 @@
 		};
 		while(query.charAt(query.length-1) === "") { // check if the last character is a space...
             query = query.substring(0, query.length - 1); // remove the space
+        // added closing bracket
         };
 		
 		// Check search length, must have 3 characters
@@ -62,12 +63,15 @@
                 if (compare !== -1) { // If a match is found, push full db[i] into results array
                     results.push(db[i]);
                 };
+            // added closing bracket
             };
+        // added closing bracket
         };
 		
 		results.sort(); // sort the elements of the array in ascending alphabetical order
 		
 		// Check that matches were found, and run output functions
+        // changed assignment operator to comparison operator
 		if(results.length == 0){ // check if the length of the results is 0
 			noMatch(); // then call noMatch function
 		}else{ // otherwise...
