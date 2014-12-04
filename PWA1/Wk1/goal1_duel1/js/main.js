@@ -13,8 +13,8 @@
     console.log("FIGHT!!!"); // write "FIGHT!!!" to the console
 
     //player name
-    var playerOneName = "Spiderman"; // declare variable for player 1 name and define it as Spiderman
-    var playerTwoName = "Batman"; // declare variable for player 2 name and define it as Batman
+    var playerOneName = "Mario"; // declare variable for player 1 name and define it as Mario
+    var playerTwoName = "Yoshi"; // declare variable for player 2 name and define it as Yoshi
 
     //player damage
     var player1Damage = 20; // declare variable for player 1 damage and define it as 20
