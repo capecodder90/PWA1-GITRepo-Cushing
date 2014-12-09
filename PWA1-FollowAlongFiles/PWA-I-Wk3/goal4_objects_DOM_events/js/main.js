@@ -26,48 +26,64 @@
 
 	-similar to making an array, we declare the object’s properties inside the literal, separating by comma...
 */
-console.log('------Objects ----------');
-
-//{KEY : Value} pairings,
-    person = {'name':'bond', 'age':35, 'secretAgent':true};
-
-    person = {name:'bond', age:35, secretAgent:true};
-
-
-
-/* accessing object properties
-     - below are 3 ways you can access the property information in an object
-         1. dot notation
-         2. index notation using a variable as the index
-         3. index notation using a string
-
-     - also keep in mind that since the keys can be strings, you could access the keys using string variables
- */
-
-    var personAge = 'age';
-
-    console.log(person.name, person[personAge], person['secretAgent']);
-
-// setter
-    person['age'] = '40';
-    person.name = "JamesBond";
-
-    console.log(person);
-
-
-//nested objects
-    person = {birthday:{month:02, day:12}, name:'bond'};
-    console.log(person);
-    console.log(person['birthday']['month']);
-
-    console.log(person.birthday.month);
+//console.log('------Objects ----------');
+//
+////{KEY : Value} pairings,
+//    person = {'name':'bond', 'age':35, 'secretAgent':true};
+//
+//    person = {name:'bond', age:35, secretAgent:true};
+//
+//
+//
+///* accessing object properties
+//     - below are 3 ways you can access the property information in an object
+//         1. dot notation
+//         2. index notation using a variable as the index
+//         3. index notation using a string
+//
+//     - also keep in mind that since the keys can be strings, you could access the keys using string variables
+// */
+//
+//    var personAge = 'age';
+//
+//    console.log(person.name, person[personAge], person['secretAgent']);
+//
+//// setter
+//    person['age'] = '40';
+//    person.name = "JamesBond";
+//
+//    console.log(person);
+//
+//
+////nested objects
+//    person = {birthday:{month:02, day:12}, name:'bond'};
+//    console.log(person);
+//    console.log(person['birthday']['month']);
+//
+//    console.log(person.birthday.month);
 
 //---------------------------------------------
 
 // Object within an object
 
 console.log('------Object within an object, Arrays, Function ----------');
+    var thatGuy = {
+        name: 'JamesBond',
+        course: 'PWA1',
+        address: {
+            num: 3300,
+            street: 'University',
+            city: 'Orlando',
+            cornerOf: ['University','Semoran']
+        },
+        showMyAddress : function(){
+            var addr = this.address.street + ', ' + this.address.city;
+            return addr;
+        }
+    };
 
+    console.log(thatGuy.showMyAddress());
+    console.log(thatGuy.address.street + ', ' + thatGuy.address.city);
 
 
 //properties & methods
@@ -81,6 +97,12 @@ console.log('------Object within an object, Arrays, Function ----------');
 console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
+    var fsStudent = {};
+    fsStudent.age = 22;
+    fsStudent.career = 'Web Dev';
+    fsStudent.sayHello = function(){ // create a method called sayHello
+        console.log('Hello!');
+    }
 
 
 
@@ -92,7 +114,11 @@ console.log('------Objects - properties & methods ----------');
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
+    fsStudent.sayHello();
+    fsStudent['sayHello']();
 
+    console.log(fsStudent.age);
+    console.log(fsStudent['age']);
 
 
 /* --------------
@@ -103,6 +129,20 @@ Method 2 "OBJECT Literal"
 
 	- below is the same object as in Method 1
 */
+
+    var fsStudent = {
+        age: 22,
+        career: 'Web Dev',
+        sayHello: function(){
+            console.log('Hello!');
+        }
+    };
+
+    fsStudent.sayHello();
+    fsStudent['sayHello']();
+
+    console.log(fsStudent.age);
+    console.log(fsStudent['age']);
 
 
 
