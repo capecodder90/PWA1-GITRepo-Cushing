@@ -16,7 +16,10 @@
     console.log(playerOneTxt);
     var playerTwoTxt = document.getElementById("yoshi").querySelector("p");
     console.log(playerTwoTxt);
-    var roundTxt = document.getElementById()
+    var roundTxt = document.querySelector("h5");
+    console.log("roundTxt = " + roundTxt);
+    var fightBtn = document.getElementById("fight_btn");
+    console.log(fightBtn);
 
     //player name
     var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
