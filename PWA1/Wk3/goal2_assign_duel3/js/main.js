@@ -1,6 +1,6 @@
 /**
  * Name: Sarah Cushing
- * Date: December 4, 2014
+ * Date: December 10, 2014
  * Duel Fight Game
 
  Assignment 2
@@ -11,6 +11,9 @@
 (function(){ //starts the function automatically
 
     console.log("FIGHT!!!"); // write "FIGHT!!!" to the console
+
+    var playerOneTxt = document.getElementById("mario").querySelector("p");
+    console.log(playerOneTxt);
 
     //player name
     var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
