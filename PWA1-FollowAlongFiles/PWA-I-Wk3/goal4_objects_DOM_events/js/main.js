@@ -590,16 +590,16 @@ console.log('------------ DOM Events Ex 1-------------------');
 
 var nav = document.querySelectorAll('#nav li a');
 
-    for(var i = 0, max = nav.length; i < max; i++){
-        console.log(nav[i]);
-
-        nav[i].onclick = function(e){
-            console.log(e);
-
-            e.preventDefault();
-            return false;
-        };
-    };
+//    for(var i = 0, max = nav.length; i < max; i++){
+//        console.log(nav[i]);
+//
+//        nav[i].onclick = function(e){
+//            console.log(e);
+//
+//            e.preventDefault();
+//            return false;
+//        };
+//    };
 
 /*
 // this just console.log's when a click occurs
@@ -643,8 +643,23 @@ console.log('------------ DOM Events Ex 2 -------------------');
 
 
 
-*/ 
+*/
 
+//    for(var i = 0, max = nav.length; i < max; i++){
+//
+//       nav[i].onclick = function(e){
+//
+//           for(var ii = 0, max2 = nav.length; ii < max2; ii++){
+//               nav[ii].setAttribute('class','navitem');
+//           };
+//
+//           console.log(this);
+//           this.setAttribute('class', 'navitem active');
+//
+//            e.preventDefault();
+//            return false;
+//        };
+//    };
 
 
 console.log('------------ DOM Events Ex 3 -------------------');
@@ -656,6 +671,24 @@ console.log('------------ DOM Events Ex 3 -------------------');
 
 
 */
+    nav[0].setAttribute('class','navitem active');
 
+    for(var i = 0, max = nav.length; i < max; i++){
+
+        nav[i].onclick = function(e){
+
+//            for(var ii = 0, max2 = nav.length; ii < max2; ii++){
+//                nav[ii].setAttribute('class','navitem');
+//            };
+
+            document.querySelector('#nav li a.active').setAttribute('class','navitem');
+
+            console.log(this);
+            this.setAttribute('class', 'navitem active');
+
+            e.preventDefault();
+            return false;
+        };
+    };
 
 })(); // end wrapper
