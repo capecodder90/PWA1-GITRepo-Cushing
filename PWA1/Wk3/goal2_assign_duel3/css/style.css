@@ -19,7 +19,7 @@ body{
 }
 
 #yoshi{
-	margin: 0px 0px 0px 59%;
+	margin: 0px 0px 0px 52%;
 	float:left;
 }
 
@@ -102,3 +102,4 @@ body{
 }
 
 h1, h5{text-align: center;}
+h5{position:relative; top:20px;}

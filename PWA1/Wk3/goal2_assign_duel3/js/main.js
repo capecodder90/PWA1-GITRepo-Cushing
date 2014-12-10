@@ -32,7 +32,7 @@
         {
             name: "Yoshi",
             damage: 20,
-            health: 20
+            health: 100
         }];
 
     //player name
@@ -43,6 +43,8 @@
     var round=0; // declare variable for round number and define it as 0
 
     roundTxt.innerHTML = "Click FIGHT BUTTON to Start!";
+    playerOneTxt.innerHTML = players[0].name + ":  " + players[0].health;
+    playerTwoTxt.innerHTML = players[1].name + ":  " + players[1].health;
 
     function fight(){ // declare fight function
         alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]); // create "start" alert, concatenate strings that show player one and player two's starting health
