@@ -16,6 +16,7 @@
     console.log(playerOneTxt);
     var playerTwoTxt = document.getElementById("yoshi").querySelector("p");
     console.log(playerTwoTxt);
+    var roundTxt = document.getElementById()
 
     //player name
     var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
