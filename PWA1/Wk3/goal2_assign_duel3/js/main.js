@@ -63,6 +63,13 @@
         roundTxt.innerHTML = "Round " + round + " Results: " + result;
         round++;
 
+        if(result === "No winner yet."){
+            playerOneTxt.innerHTML = players[0].name + ":  " + players[0].health;
+            playerTwoTxt.innerHTML = players[1].name + ":  " + players[1].health;
+        }else{
+            fightBtn.removeEventListener("click", fight, false);
+        }
+
         /*for (var i = 0; i < 10; i++) // create for loop: create variable i, check if i is less than 10 (maximum 10 rounds), then increment i by one
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
@@ -99,7 +106,7 @@
         {
             result = "You Both Die - Game Over!"; // if both player's health is less than 1, they both die
         } else if(players[0].health<1){ // otherwise, if player 1's health is less than 1...
-            result =players[1].name + " WINS!!!" // player 2 wins
+            result = players[1].name + " WINS!!!" // player 2 wins
         } else if (players[1].health<1) // otherwise, if player 2's health is less than 1...
         {
             result = players[0].name + " WINS!!!" // player 1 wins
