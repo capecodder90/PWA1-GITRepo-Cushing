@@ -183,7 +183,7 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
         students: [
             {name: 'Jane Doe', GPA: 2.6, classes: ['PWA1','PWA2']},
             {name: 'Albert Einstein', GPA: 4.0},
-            {name: 'James Bond', GPA: 3.9},
+            {name: 'James Bond', GPA: 3.9}
         ]
     };
 
@@ -309,7 +309,7 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
         students: [
             {name: 'Jane Doe', GPA: 2.6, classes: ['PWA1','PWA2']},
             {name: 'Albert Einstein', GPA: 4.0},
-            {name: 'James Bond', GPA: 3.9},
+            {name: 'James Bond', GPA: 3.9}
         ]
     };
     console.log('number of object fields', obj1.students.length);
@@ -465,7 +465,10 @@ console.log('------------ querySelectorAll -------------------');
     */
     console.log('------------ TRAVERSAL -------------------');
 
+    var apple = document.querySelectorAll('#nav li a')[2];
+    console.log(apple);
 
+    console.log((apple.parentNode.parentNode.parentNode).nextSibling);
 
 
 /*
