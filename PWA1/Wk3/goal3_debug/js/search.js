@@ -45,9 +45,8 @@ Assignment: Debug Version 3
 	var search = function(query){ // create the search variable and define it as the value of the function
 		
 		// split the user's search query string into an array
-		var queryArray = query.split(" "); // create queryArray variable, define it as the joined elements of an array with a space separator
-		console.log(queryArray);
-        
+		var queryArray = query.split(" "); // split the words in the user's search query into an array, store it in the variable queryArray
+
 		// array to store matched results from database.js
 		var results = []; // create results variable, define it as an empty array
 
