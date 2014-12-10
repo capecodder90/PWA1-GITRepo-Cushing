@@ -487,24 +487,47 @@ console.log('------------ querySelectorAll -------------------');
         attr = href, src, class
 */
 
+    console.log('------------ Manipulating Attributes setAttribute / getAttribute -------------------');
+
+    var navLinks = document.querySelectorAll('#nav li');
+
+    for(var i= 0, max=navLinks.length; i<max; i++) {
+        var href = navLinks[i].firstChild.getAttribute('href');
+        console.log('Manipulation HREF:', href);
+
+        if (href === '#1') {
+            var href2 = navLinks[i].firstChild;
+            console.log(href2);
+
+            href2.setAttribute('href', 'http://www.fullsail.com');
+        }
+        ;
+
+        //};
+
+        /*
+         ==================================================================
+         Manipulating CSS Classes
+         ------------------------------------------------------------------
+         - If you use setAttribute to change the "class" attribute of an element,
+         that element is immediately redrawn with the new css styles.
+
+         - Just like normal, you can set MULTIPLE classes at once.
+
+         element.setAttribute('class', 'thumb active')
+
+         - FYI: Elements can have multiple classes.
+         */
+
+    console.log('------------ Manipulating CSS Classes -------------------');
+
+        var aClass = navLinks[i].firstChild.getAttribute('class');
+        console.log('Manipulation A Class:', aClass);
+
+        navLinks[i].firstChild.setAttribute('class','navitem active');
 
 
-/*
-	==================================================================
-	Manipulating CSS Classes
-	------------------------------------------------------------------
-		- If you use setAttribute to change the "class" attribute of an element,
-			that element is immediately redrawn with the new css styles.
-		
-		- Just like normal, you can set MULTIPLE classes at once.
-		
-			element.setAttribute('class', 'thumb active')
-
-		- FYI: Elements can have multiple classes.
-*/
-
-console.log('------------ Manipulating CSS Classes -------------------');
-
+    };
 
 /*
 	==================================================================
