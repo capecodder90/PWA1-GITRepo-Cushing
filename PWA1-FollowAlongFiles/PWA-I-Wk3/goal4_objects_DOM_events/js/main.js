@@ -354,16 +354,6 @@ console.log('------------ DOCUMENT OBJECT MODEL -------------------');
  console.log(document.head);
 */
 
-/*
-     ==================================================================
-     Manipulating HTML
-     ------------------------------------------------------------------
-        HTML elements also have a property called "innerHTML"
-        .innerHTML is both a getter and a setter property (using strings)
-*/
-
-    console.log('------------ Manipulating HTML -------------------');
-
 
 
 /*
@@ -519,15 +509,39 @@ console.log('------------ querySelectorAll -------------------');
          - FYI: Elements can have multiple classes.
          */
 
-    console.log('------------ Manipulating CSS Classes -------------------');
+        console.log('------------ Manipulating CSS Classes -------------------');
 
-        var aClass = navLinks[i].firstChild.getAttribute('class');
-        console.log('Manipulation A Class:', aClass);
+//        var aClass = navLinks[i].firstChild.getAttribute('class');
+//        console.log('Manipulation A Class:', aClass);
+//
+//        navLinks[i].firstChild.setAttribute('class', 'navitem active');
 
-        navLinks[i].firstChild.setAttribute('class','navitem active');
 
+        //};
+
+        /*
+         ==================================================================
+         Manipulating HTML
+         ------------------------------------------------------------------
+         HTML elements also have a property called "innerHTML"
+         .innerHTML is both a getter and a setter property (using strings)
+         */
+
+        console.log('------------ Manipulating HTML -------------------');
+
+        navLinks[i].firstChild.setAttribute('href','http://google.com');
 
     };
+
+    var navLinks = document.querySelectorAll('#nav a');
+    console.log(navLinks[1].innerHTML);
+
+    navLinks[1].innerHTML = "This link rocks!";
+
+    for(var i= 0, max=navLinks.length; i<max; i++){
+        navLinks[i].innerHTML = "Click me " + i;
+    };
+
 
 /*
 	==================================================================
@@ -540,7 +554,8 @@ console.log('------------ querySelectorAll -------------------');
 Sample Link: http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg
 */
 
-
+    var bigimage = document.querySelector('#contentPreview img');
+    bigimage.setAttribute('src','http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg');
 
 /*
 	==================================================================
