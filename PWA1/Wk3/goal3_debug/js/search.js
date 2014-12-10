@@ -1,3 +1,9 @@
+/*
+Name: Sarah Cushing
+Date: December 10, 2014
+Assignment: Debug Version 3
+ */
+
 // Create privatized scope using a self-executing function
 (function(){ // automatically starts the function
 	
