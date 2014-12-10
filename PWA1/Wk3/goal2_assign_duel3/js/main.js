@@ -115,6 +115,6 @@
     };
 
     /*******  The program gets started below *******/
-    fight(); // calls the function to start the program
+    //fight(); // calls the function to start the program
 
 })();
