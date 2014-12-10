@@ -21,6 +21,8 @@
     var fightBtn = document.getElementById("fight_btn");
     console.log(fightBtn);
 
+    fightBtn.addEventListener("click", fight, false);
+
     //player name
     var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
     var playerTwo = ["Yoshi", 20, 100];// create variable playerTwo, define it as an array with the player name, damage and health
