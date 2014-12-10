@@ -104,7 +104,9 @@
         var result="No winner yet."; // create variable "result" and define it as "no winner"
         if (players[0].health<1 && players[1].health<1) // check if player 1's health is less than 1 AND if player 2's health is less than one
         {
-            result = "You Both Die - Game Over!"; // if both player's health is less than 1, they both die
+            result = "You Both Die - Game Over!"; // if both  player's health is less than 1, they both die
+            playerOneTxt.innerHTML = "Poor " + players[0].name + " :(";
+            playerTwoTxt.innerHTML = "Poor " + players[1].name + " :(";
         } else if(players[0].health<1){ // otherwise, if player 1's health is less than 1...
             result = players[1].name + " WINS!!!" // player 2 wins
         } else if (players[1].health<1) // otherwise, if player 2's health is less than 1...
