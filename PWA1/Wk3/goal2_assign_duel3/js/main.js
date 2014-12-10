@@ -109,9 +109,13 @@
             playerTwoTxt.innerHTML = "Poor " + players[1].name + " :(";
         } else if(players[0].health<1){ // otherwise, if player 1's health is less than 1...
             result = players[1].name + " WINS!!!" // player 2 wins
+            playerOneTxt.innerHTML = "Poor " + players[0].name + " :(";
+            playerTwoTxt.innerHTML = "Yay " + players[1].name + " :)";
         } else if (players[1].health<1) // otherwise, if player 2's health is less than 1...
         {
             result = players[0].name + " WINS!!!" // player 1 wins
+            playerOneTxt.innerHTML = "Yay " + players[0].name + " :)";
+            playerTwoTxt.innerHTML = "Poor " + players[1].name + " :(";
         };
        return result; // return the value stored in "result"
     };
