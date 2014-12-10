@@ -13,22 +13,22 @@ body{
 	height: 100%;
 }
 
-#kabal{
+#mario{
 	margin: 0px 0px 0px 15%;
 	float:left;
 }
 
-#kratos{
+#yoshi{
 	margin: 0px 0px 0px 59%;
 	float:left;
 }
 
-#kabal p{
+#mario p{
 	font-family: arial;
 	font-size:  25px;
 }
 
-#kratos p{
+#yoshi p{
 	font-family: arial;
 	font-size:  25px;
 }
