@@ -23,12 +23,26 @@
 
     fightBtn.addEventListener("click", fight, false);
 
+    var players = [
+        {
+            name: "Mario",
+            damage: 20,
+            health: 100
+        },
+        {
+            name: "Yoshi",
+            damage: 20,
+            health: 20
+        }];
+
     //player name
-    var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
-    var playerTwo = ["Yoshi", 20, 100];// create variable playerTwo, define it as an array with the player name, damage and health
+   // var playerOne = ["Mario", 20, 100]; // create variable playerOne, define it as an array with the player name, damage and health
+   // var playerTwo = ["Yoshi", 20, 100];// create variable playerTwo, define it as an array with the player name, damage and health
 
     //initiate round
     var round=0; // declare variable for round number and define it as 0
+
+    roundTxt.innerHTML = "Click FIGHT BUTTON to Start!";
 
     function fight(){ // declare fight function
         alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]); // create "start" alert, concatenate strings that show player one and player two's starting health
