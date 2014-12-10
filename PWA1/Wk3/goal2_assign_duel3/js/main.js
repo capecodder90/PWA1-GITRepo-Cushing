@@ -47,8 +47,18 @@
     playerTwoTxt.innerHTML = players[1].name + ":  " + players[1].health;
 
     function fight(){ // declare fight function
-        alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]); // create "start" alert, concatenate strings that show player one and player two's starting health
-        for (var i = 0; i < 10; i++) // create for loop: create variable i, check if i is less than 10 (maximum 10 rounds), then increment i by one
+        //alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]); // create "start" alert, concatenate strings that show player one and player two's starting health
+        playerOneTxt.innerHTML = players[0].name + ":  " + players[0].health;
+        playerTwoTxt.innerHTML = players[1].name + ":  " + players[1].health;
+
+        var p1 = Math.floor(Math.random() * players[0].damage + players[0].damage *.5);
+        var p2 = Math.floor(Math.random() * players[1].damage + players[1].damage *.5);
+
+        players[0].health -= p1;
+        players[1].health -= p2;
+        console.log("Health: " + players[0].health + " " + players[1].health);
+
+        /*for (var i = 0; i < 10; i++) // create for loop: create variable i, check if i is less than 10 (maximum 10 rounds), then increment i by one
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = playerOne[1] * .5; // create variable to store the calculation of half of player 1's health
@@ -75,7 +85,7 @@
                 break; // jump out of the loop
             };
 
-          };
+          };*/
     };
 
     function winnerCheck(){ // declare function winnerCheck (see if there is a winner yet)
