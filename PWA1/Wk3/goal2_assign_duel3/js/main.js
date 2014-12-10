@@ -40,7 +40,7 @@
    // var playerTwo = ["Yoshi", 20, 100];// create variable playerTwo, define it as an array with the player name, damage and health
 
     //initiate round
-    var round=0; // declare variable for round number and define it as 0
+    var round=1; // declare variable for round number and define it as 0
 
     roundTxt.innerHTML = "Click FIGHT BUTTON to Start!";
     playerOneTxt.innerHTML = players[0].name + ":  " + players[0].health;
@@ -61,6 +61,7 @@
         var result = winnerCheck();
         //console.log(result);
         roundTxt.innerHTML = "Round " + round + " Results: " + result;
+        round++;
 
         /*for (var i = 0; i < 10; i++) // create for loop: create variable i, check if i is less than 10 (maximum 10 rounds), then increment i by one
         {
