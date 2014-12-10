@@ -59,7 +59,8 @@
         console.log("Health: " + players[0].health + " " + players[1].health);
 
         var result = winnerCheck();
-        console.log(result);
+        //console.log(result);
+        roundTxt.innerHTML = "Round " + round + " Results: " + result;
 
         /*for (var i = 0; i < 10; i++) // create for loop: create variable i, check if i is less than 10 (maximum 10 rounds), then increment i by one
         {
@@ -92,10 +93,10 @@
     };
 
     function winnerCheck(){ // declare function winnerCheck (see if there is a winner yet)
-        var result="no winner"; // create variable "result" and define it as "no winner"
+        var result="No winner yet."; // create variable "result" and define it as "no winner"
         if (players[0].health<1 && players[1].health<1) // check if player 1's health is less than 1 AND if player 2's health is less than one
         {
-            result = "You Both Die"; // if both player's health is less than 1, they both die
+            result = "You Both Die - Game Over!"; // if both player's health is less than 1, they both die
         } else if(players[0].health<1){ // otherwise, if player 1's health is less than 1...
             result =players[1].name + " WINS!!!" // player 2 wins
         } else if (players[1].health<1) // otherwise, if player 2's health is less than 1...
