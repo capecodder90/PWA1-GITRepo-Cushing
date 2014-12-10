@@ -352,7 +352,18 @@ console.log('------------ DOCUMENT OBJECT MODEL -------------------');
  console.log(document);
  console.log(document.body);
  console.log(document.head);
- */
+*/
+
+/*
+     ==================================================================
+     Manipulating HTML
+     ------------------------------------------------------------------
+        HTML elements also have a property called "innerHTML"
+        .innerHTML is both a getter and a setter property (using strings)
+*/
+
+    console.log('------------ Manipulating HTML -------------------');
+
 
 
 /*
