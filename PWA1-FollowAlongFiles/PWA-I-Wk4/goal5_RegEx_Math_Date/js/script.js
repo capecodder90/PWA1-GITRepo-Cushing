@@ -403,13 +403,13 @@ STUDENT ACTIVITY
 
     //console.log(document.getElementById("tagbox").innerHTML=Math.random());
 
-    var rand = (Math.random() * 10 + 1);
-    console.log("rand: " + rand);
-    var num = Math.floor(rand);
-    console.log(num);
-
-    console.log(document.getElementById("tagbox").innerHTML = Math.min(5,10));
-    console.log(document.getElementById("tagbox").innerHTML = Math.round(2.5));
+//    var rand = (Math.random() * 10 + 1);
+//    console.log("rand: " + rand);
+//    var num = Math.floor(rand);
+//    console.log(num);
+//
+//    console.log(document.getElementById("tagbox").innerHTML = Math.min(5,10));
+//    console.log(document.getElementById("tagbox").innerHTML = Math.round(2.5));
 
 
     /******************************************************************************
@@ -419,14 +419,24 @@ STUDENT ACTIVITY
      (100, 1000, 50, 2, 55, 75)
 
 
-     2.  Produce a random number between 100 and 10,000.
+     2.  Produce a random integer number between 100 and 10,000.
 
 
-     3. 	Produce a random number between 100 and 10, and round it to the nearest
+     3. Produce a random number between 100 and 10, and round it to the nearest
      integer.  Console.log the random number before and after you round the number.
 
 
     ****************************************************************************/
+
+    console.log(Math.min(100, 1000, 50, 2, 55, 75));
+    console.log(Math.max(100, 1000, 50, 2, 55, 75));
+
+    console.log("Integer:", Math.floor(Math.random() * 10000 + 100));
+
+    var num = Math.random() * 100 + 10;
+    console.log(num);
+    var num2 = Math.round(num);
+    console.log(num2);
 
 
 
