@@ -401,6 +401,15 @@ STUDENT ACTIVITY
 
     console.log('------------ Math Methods -------------------');
 
+    //console.log(document.getElementById("tagbox").innerHTML=Math.random());
+
+    var rand = (Math.random() * 10 + 1);
+    console.log("rand: " + rand);
+    var num = Math.floor(rand);
+    console.log(num);
+
+    console.log(document.getElementById("tagbox").innerHTML = Math.min(5,10));
+    console.log(document.getElementById("tagbox").innerHTML = Math.round(2.5));
 
 
     /******************************************************************************
@@ -432,25 +441,25 @@ STUDENT ACTIVITY
 	popular date methods: date( ), getFullYear( ), setFullYear( ), getTime( ), getDay( )
 
 */
-
-    console.log('------------ Date Methods -------------------');
-
-    console.log(new Date());
-
-    var d = new Date();
-//    console.log(d.getDate());
-//    console.log(d.getDay());
-//    console.log(d.getFullYear());
-//    console.log(d.getHours());
-//    console.log(d.getMilliseconds());
-//    console.log(d.getTime());
-
-    console.log(d.setFullYear(2021, 0, 01));
-    document.getElementById("tagbox").innerHTML=d;
-
-    var d = new Date();
-    console.log(d.toLocaleDateString());
-    console.log(typeof d.toString());
+//
+//    console.log('------------ Date Methods -------------------');
+//
+//    console.log(new Date());
+//
+//    var d = new Date();
+////    console.log(d.getDate());
+////    console.log(d.getDay());
+////    console.log(d.getFullYear());
+////    console.log(d.getHours());
+////    console.log(d.getMilliseconds());
+////    console.log(d.getTime());
+//
+//    console.log(d.setFullYear(2021, 0, 01));
+//    document.getElementById("tagbox").innerHTML=d;
+//
+//    var d = new Date();
+//    console.log(d.toLocaleDateString());
+//    console.log(typeof d.toString());
 
 
 
