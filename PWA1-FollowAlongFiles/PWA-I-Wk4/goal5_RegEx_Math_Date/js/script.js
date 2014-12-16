@@ -306,6 +306,17 @@ console.log('------------ DOM Events -------------------');
 
 console.log('------------ Regular Expressions -------------------');
 
+//    jamesbond@fullsail.com
+//    JamesBond@fullsail.com
+//    James-Bond@fullsail.com
+//    James.Bond@fullsail.com
+//    jamesbond@66.192.104.74
+
+    var emailRegEx = /^[\w\.\-]+@([\w\-]+\.)+[a-zA-Z]+$/;
+
+    var email = new RegExp(emailRegEx);
+
+
 /******************************************************************************
 STUDENT ACTIVITY
 
