@@ -322,25 +322,25 @@ STUDENT ACTIVITY
 
 	1.  Write a RegEx for a basic name (containing only letters)
 
-		Answer: 
+		Answer: /^[a-zA-Z]+$/
 
 	2.  What are the possible answers for this: /[Jj]ava[Ss]cript/
 
-		Answer: 
+		Answer: JavaScript, javascript, Javascript, javaScript
 
 	3. 	What are the possible answers for this: /^(Java)?Script$/
 
-		Answer: 
+		Answer: JavaScript, Script
 
 	4. 	Describe the possible answer for this: /^[a-zA-Z\^\-\.]+$/
 
-		Answer: 
+		Answer: One or more of only letters
 
 	5.	Combining character sets can create sequences of matches.
 		
 		Describe the possible answers for this: /^[a-zA-Z]+[0-9]$/ 	
 
-		Answer: 
+		Answer: must start with any number of any characters followed by one number at the end of the string
 
 ----------------------------------------------------------------------------- */
 
@@ -357,6 +357,20 @@ STUDENT ACTIVITY
 	split()		string.split.(RegExp): cuts a string into an array, making cuts at matches
 */
 
+    var emailRegEx = /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/;
+    var str = "My personal email is jc@google.com work email is jc@fullsail.com";
+
+    console.log(emailRegEx.test(str));
+
+    console.log(str.search(emailRegEx));
+
+    var clean = str.replace(emailRegEx, "XXX@XXX.com");
+    console.log(clean);
+
+    var clean = clean.replace(emailRegEx, "jc@gmail.com");
+    console.log(clean);
+
+    console.log(str.match(emailRegEx));
 
 
 
